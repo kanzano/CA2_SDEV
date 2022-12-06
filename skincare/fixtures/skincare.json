@@ -1,0 +1,139 @@
+[{
+        "model": "skincare.category",
+        "pk": "32dd1d4b-9a56-43bf-acc5-6c69640cc280",
+        "fields": {
+            "name": "Body Products",
+            "description": "We�ve got everything you�ll ever need to make your skin soft, smooth and glowing! Our huge range of body skincare will make every inch of your skin feel healthy, moisturised and radiant.\r\n\r\nThe body products we have to offer include moisturisers, oils, scrubs, exfoliators, hand creams, foot creams and gradual tans to name a few � you�re spoilt for choice! Make your skin prepared for whatever life throws at it.",
+            "image": "category/bodyskincare_banner_iHtVN9t.jpg"
+        }
+    },
+    {
+        "model": "skincare.category",
+        "pk": "df515718-a0ce-40a7-adc3-b8200154b794",
+        "fields": {
+            "name": "Facial Products",
+            "description": "Discover our range of facial skincare products like cleansers, toners, serums, oils, moisturisers and more. Shop online and collect your products.\r\n\r\nTake care of your skin in a natural way with Freshly Cosmetics!\r\nFind the best healthy, vegan and sustainable products for 100% natural skincare at Freshly Cosmetics.\r\n\r\n\r\nWhy is skincare important?\r\nIn our online shop you will find everything you need for completely natural skincare.\r\n\r\nSkincare, which always begins and ends with cleansing with a facial cleanser, is extremely important. However, cleansing should be accompanied by toners, masks and serums that prevent and combat the signs of fatigue and skin ageing.\r\n\r\nBy adding our natural products to your skincare routine, you can combat dark circle with a natural eye contour, as well as skin blemishes, redness and irritation. All you have to do is choosing the right combination of natural cosmetics for your skin and start taking care of it the way it deserves!\r\n\r\nEvery skin type has specific needs. Choose the natural active ingredients that are best suited to your needs and take advantage of their properties to get radiant, fresh and healthy skin.\r\n\r\nWhether you have dry, combination or oily skin, at Freshly you will find natural ingredients and active ingredients that will make your face radiant.",
+            "image": "category/facial_banner_YgoksKJ.jpg"
+        }
+    },
+    {
+        "model": "skincare.product",
+        "pk": "13d2f47e-a6a0-43e2-8573-06b5dbc98384",
+        "fields": {
+            "name": "The Ordinary Mask",
+            "description": "The Ordinary Salicylic Acid 2% Mask is a deep-cleansing, exfoliating face mask to clear blemishes and congested skin while restoring a radiant glow. Ideal for tackling acne, acne-prone skin or blackheads.",
+            "category": "df515718-a0ce-40a7-adc3-b8200154b794",
+            "price": "10.75",
+            "image": "product/Ordinary_Mask_t62VKBK.jpeg",
+            "stock": 10,
+            "available": true,
+            "created": "2022-11-27T23:51:10.899Z",
+            "updated": "2022-11-27T23:51:10.899Z"
+        }
+    },
+    {
+        "model": "skincare.product",
+        "pk": "15a676b8-8a0d-4150-bee4-6701eac70b97",
+        "fields": {
+            "name": "La Roche-Posay Facial Scrub",
+            "description": "Purify & exfoliate your skin texture with Ultra-Fine Scrub by La Roche-Posay - an exfoliator for sensitive skin developed without soap.",
+            "category": "df515718-a0ce-40a7-adc3-b8200154b794",
+            "price": "12.43",
+            "image": "product/la_roche-posay.jpg",
+            "stock": 8,
+            "available": true,
+            "created": "2022-11-28T00:13:26.853Z",
+            "updated": "2022-11-28T00:13:26.853Z"
+        }
+    },
+    {
+        "model": "skincare.product",
+        "pk": "20124c89-d8e4-4743-8f2a-1ad2746e5b14",
+        "fields": {
+            "name": "Aveeno Lotion",
+            "description": "Moisturises Normal to Dry skin for 24h & Suitable for Sensitive Skin. Products for your body.",
+            "category": "32dd1d4b-9a56-43bf-acc5-6c69640cc280",
+            "price": "5.99",
+            "image": "product/Aveeno_body.jpg",
+            "stock": 4,
+            "available": true,
+            "created": "2022-11-28T00:18:38.237Z",
+            "updated": "2022-11-28T00:18:38.237Z"
+        }
+    },
+    {
+        "model": "skincare.product",
+        "pk": "3b4e466c-5039-41b6-964a-85f01e0dd262",
+        "fields": {
+            "name": "Neutrogena Toner",
+            "description": "Cleanse and refresh skin with facial toners that deliver glowing results.",
+            "category": "df515718-a0ce-40a7-adc3-b8200154b794",
+            "price": "6.83",
+            "image": "product/facial_toner.jpg",
+            "stock": 5,
+            "available": true,
+            "created": "2022-11-27T23:58:52.823Z",
+            "updated": "2022-11-27T23:58:52.823Z"
+        }
+    },
+    {
+        "model": "skincare.product",
+        "pk": "4799d623-e092-4b89-b8b8-5fd5515f2ba5",
+        "fields": {
+            "name": "Simple Moisturizer",
+            "description": "Dry skin? If you're looking for a face moisturiser that leaves skin feeling soft, smooth and perfectly hydrated without clogging your pores, then look no further. Simple Kind to Skin Hydrating Light Moisturiser provides care whilst feeling light on the skin, keeping it refreshed, replenished and hydrated for up to 12 hours.",
+            "category": "df515718-a0ce-40a7-adc3-b8200154b794",
+            "price": "5.99",
+            "image": "product/simple_moisturizer.jpg",
+            "stock": 7,
+            "available": true,
+            "created": "2022-11-28T00:06:18.976Z",
+            "updated": "2022-11-28T00:06:18.976Z"
+        }
+    },
+    {
+        "model": "skincare.product",
+        "pk": "821377f5-1a4e-4f10-bb26-11eb1408f7dc",
+        "fields": {
+            "name": "Clinique - Body Exfoliator",
+            "description": "Buffing beads gently exfoliate. Gel-like formula contains ingredients to invigorate and soften skin. Unbreakable tube and flip-top cap.",
+            "category": "32dd1d4b-9a56-43bf-acc5-6c69640cc280",
+            "price": "28.05",
+            "image": "product/clinique_body.jpg",
+            "stock": 10,
+            "available": true,
+            "created": "2022-11-28T00:23:12.932Z",
+            "updated": "2022-11-28T00:23:12.932Z"
+        }
+    },
+    {
+        "model": "skincare.product",
+        "pk": "acde85cc-b397-4332-a4c4-276dc043eb96",
+        "fields": {
+            "name": "Garnier Body Cream",
+            "description": "Replenishing Body Lotion for very dry skin. Instantly skin feels nourished and softened with long-lasting hydration felt for up to 7 days. Enriched with shea butter, harvested from the shea tree of West Africa, and a fragment of probiotic inspired by actives found in yoghurts. \r\n\r\nThis super hydrating body moisturiser helps to reinforce skin�s natural protective barrier, creating an anti-evaporation effect to help maintain hydration levels in skin. It is rich in essential nutrients known to build skin lipids, helping to replenish and soften extra dry skin. Garnier�s shea butter body lotion is fast-absorbing, non-greasy and non-sticky.",
+            "category": "32dd1d4b-9a56-43bf-acc5-6c69640cc280",
+            "price": "7.99",
+            "image": "product/garnier_body.jpg",
+            "stock": 6,
+            "available": true,
+            "created": "2022-11-28T00:30:11.116Z",
+            "updated": "2022-11-28T00:30:11.116Z"
+        }
+    },
+    {
+        "model": "skincare.product",
+        "pk": "e8bca6f0-9639-4476-8311-c8e70e8ec327",
+        "fields": {
+            "name": "Victoria Secret- Body Mist",
+            "description": "Feel fresh all day long with Victoria's Secret's body mists that offer the luxurious fragrances for everyday use.",
+            "category": "32dd1d4b-9a56-43bf-acc5-6c69640cc280",
+            "price": "17.00",
+            "image": "product/victoriasecret_body.jpg",
+            "stock": 9,
+            "available": true,
+            "created": "2022-11-28T00:33:46.948Z",
+            "updated": "2022-11-28T00:33:46.948Z"
+        }
+    }
+]

@@ -1,0 +1,47 @@
+{% extends "base.html" %} {% load static %} {% block metadescription %} {% if category %} {{ category.description|truncatewords:155 }} {% else %} Welcome to the skincare products store where you can buy many skincare products. {% endif %} {% endblock%}
+{% block title %} {% if category %} {{ category.name }} - Perfect Skincare Store {% else %} See Our Skincare Products Collection - Perfect Skincare Store {% endif %} {% endblock %} {% block content %}
+<!--Breadcrumb navigation-->
+{% if category %}
+<div>
+    <div>
+        <p><a href="{% url 'skincare:all_products' %}">Our Product Collection</a> | {{category.name}}</p>
+    </div>
+</div>
+{% endif %}
+<div>
+    {% if category %}
+    <img class="" src="{{category.image.url}}" alt="{{category.name}}">
+</div>
+<br>
+
+<div>
+    <h1>{{category.name}}</h1>
+    <p>{{category.description}}</p>
+</div>
+{% else %}
+<img class="" src="{% static 'images/skincare_logo.jpg' %}" alt="Our Products Collection">
+</div>
+<br>
+<div>
+    <h1>Our Products Collection</h1>
+    <p>Have a look through our collection of skincare products.</p>
+</div>
+{% endif %}
+<div>
+    <div>
+        {% for product in prods %}
+        <div>
+            <div>
+                <a class="img" href=""><img src="{{product.image.url}}" alt="{{product.name}}"></a>
+                <div>
+                    <h4>{{product.name}}</h4>
+                    <p>€{{product.price}}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <br>
+</div>
+{% endblock %}
