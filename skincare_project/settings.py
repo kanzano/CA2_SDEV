@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'skincare',
     'accounts',
+    'search_app',
+    'vouchers'
 ]
 
 MIDDLEWARE = [
