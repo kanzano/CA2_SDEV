@@ -64,6 +64,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # "skincare.context_processors.menu_links",
             ],
         },
     },
@@ -130,5 +131,12 @@ MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
+LOGIN_REDIRECT_URL = "skincare:all_products"
+LOGOUT_REDIRECT_URL = "skincare:all_products"
+
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'accounts.CustomUser'
+
+STRIPE_SECRET_KEY = "sk_test_51M7efPKhXXDv8KfCMUuecG5yDCyAavW9JoESdUgnwy7loGkIFViDCdLrdMtPEoiLVL1vkYDYhCLbJByeJmMd7nYy0027qKboWl"
+STRIPE_PUBLISHABLE_KEY = "pk_test_51M7efPKhXXDv8KfCBbcCg8qSP2JmfkP1bS53yjvHLHfDZKMDjppWtzudh2v2uBKz8PV0cyE6mkUSnxAhSEyGTuWa00ir1co93n"
