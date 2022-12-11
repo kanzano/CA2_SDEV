@@ -45,25 +45,25 @@ def cart_detail(request, total=0, counter=0, cart_items=None):
             counter += cart_item.quantity
     except ObjectDoesNotExist:
         pass
-    stripe.api_key = settings.STRIPE_SECRET_KEY
-    stripe_total = int(total * 100)
-    description = 'Skincare - New Order'
-    data_key = settings.STRIPE_PUBLISHABLE_KEY
-    for order_item in cart_items:
-        oio = OrderItem.objects.create(
-            product=order_item.product.name,
-            quantity=order_item.quantity,
-            price=order_item.product.price,
-            order=order_details)
-        oio.save()
-        '''Reduce stock when order is palced or saved'''
-        products = Product.objects.get(id=order_item.product.id)
-        products.stock = int(order_item.product.stock - order_item.quantity)
-        products.save()
-        order_item.delete()
-        '''The terminal will print this message when order is placed'''
-        print('the order has been created')
-    return redirect('skincare:all_prods')
+        stripe.api_key = settings.STRIPE_SECRET_KEY
+        stripe_total = int(total * 100)
+        description = 'Skincare - New Order'
+        data_key = settings.STRIPE_PUBLISHABLE_KEY
+        for order_item in cart_items:
+            oio = OrderItem.objects.create(
+                product=order_item.product.name,
+                quantity=order_item.quantity,
+                price=order_item.product.price,
+                order=order_details)
+            oio.save()
+            '''Reduce stock when order is palced or saved'''
+            products = Product.objects.get(id=order_item.product.id)
+            products.stock = int(order_item.product.stock - order_item.quantity)
+            products.save()
+            order_item.delete()
+            '''The terminal will print this message when order is placed'''
+            print('the order has been created')
+        return redirect('skincare:all_prods')
     except ObjectDoesNotExist:
         pass
 
