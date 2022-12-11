@@ -43,6 +43,9 @@ INSTALLED_APPS = [
     'vouchers',
     "crispy_forms",
     "crispy_bootstrap5",
+    'cart',
+    'stripe',
+    'order',
 ]
 
 MIDDLEWARE = [
@@ -68,6 +71,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'cart.context_processors.counter',
                 # "skincare.context_processors.menu_links",
             ],
         },
@@ -142,5 +146,6 @@ LOGOUT_REDIRECT_URL = "skincare:all_products"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
-STRIPE_SECRET_KEY = "sk_test_51M7efPKhXXDv8KfCMUuecG5yDCyAavW9JoESdUgnwy7loGkIFViDCdLrdMtPEoiLVL1vkYDYhCLbJByeJmMd7nYy0027qKboWl"
-STRIPE_PUBLISHABLE_KEY = "pk_test_51M7efPKhXXDv8KfCBbcCg8qSP2JmfkP1bS53yjvHLHfDZKMDjppWtzudh2v2uBKz8PV0cyE6mkUSnxAhSEyGTuWa00ir1co93n"
+# settings.py
+STRIPE_SECRET_KEY ='sk_test_51MDVHAAk6HeCmAkR5UaVUs2Rc3y3gVB5L2MPDOoHPuAG1AGHE8oj9k2jSVZcPTjqOZQ4aun4Pt3y62fncoo4yK9D008KiPpjcp'
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51MDVHAAk6HeCmAkRfFLiHfcWrifbsbtaFMGl3ezymvWoxQYHeldAdiYvwTlwDtskUdVlONLj6I6HIM28nZi0vGhj00DmTPiV39'
