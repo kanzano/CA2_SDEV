@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'skincare',
     'accounts',
     'search_app',
-    'vouchers'
+    'vouchers',
+    "crispy_forms",
+    "crispy_bootstrap5",
 ]
 
 MIDDLEWARE = [
